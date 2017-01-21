@@ -1,0 +1,27 @@
+
+
+<template name="isHUD">
+
+    <view class="hud_bg {{isShow ? 'hud_show' : 'hud_hide'}}">
+        <view class="hud_main">
+
+            <block wx:if="{{icontype.length === 0}}">
+                <block wx:if="{{progress > 0}}">
+                    <canvas class="hud_icon" disable-scroll="true"
+                     canvas-id="canvas_progress" />
+                </block>
+                <block wx:else>
+                    <view class="hud_loading"></view>
+                </block>
+                <view class="hud_content">{{text}}</view>
+            </block>
+            <block wx:else>
+                <icon class="hud_icon" type="{{icontype}}" 
+                color="white" size="50"></icon>
+                <view class="hud_content">{{text}}</view>
+            </block>
+            
+        </view>
+    </view>
+
+</template>

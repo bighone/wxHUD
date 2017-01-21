@@ -1,0 +1,9 @@
+/**index.wxss**/
+
+@import "../../hud/hud.wxss";
+
+.button_attr {
+  width: 80%;
+  font-size: 30rpx;
+  margin: 20rpx 0;
+}

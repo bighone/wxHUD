@@ -1,0 +1,44 @@
+<!--index.wxml-->
+
+<import src="../../hud/hud.wxml" />
+<template is="isHUD" data="{{...hud.infos}}"/>
+
+<view class="container">
+  
+  <button class="button_attr" 
+          type="default" 
+          bindtap="loadingTap"
+          size="default">
+  加载中</button>
+
+  <button class="button_attr" 
+          type="primary" 
+          bindtap="successTap"
+          size="default">
+  加载成功</button>
+
+  <button class="button_attr" 
+          type="warn" 
+          bindtap="failTap"
+          size="default">
+  加载失败</button>
+
+  <button class="button_attr" style="background:yellow; color:red" 
+          type="warn" 
+          bindtap="warnTap"
+          size="default">
+  警告</button>
+
+  <button class="button_attr" style="background:blue; color:white" 
+          type="default" 
+          bindtap="tipTap"
+          size="default">
+  信息提示</button>
+
+  <button class="button_attr" style="background:#09BB07; color:white" 
+          type="default" 
+          bindtap="progressTap"
+          size="default">
+  进度加载</button>
+
+</view>
