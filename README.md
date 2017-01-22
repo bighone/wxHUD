@@ -3,7 +3,7 @@
 
 ## 如何使用
 
-####1、导入到项目
+####1、导入hud文件夹到项目中
 ####2、app.js配置
 	import hudClass from "?/hud/hud";
 	let util = requir("?/utils/util.js");
