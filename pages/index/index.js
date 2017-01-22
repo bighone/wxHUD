@@ -37,13 +37,13 @@ Page({
   progressTap: function() {
     var that = this;
     var i = 0;
-    this.interval = setInterval(function() {
+    var interval = setInterval(function() {
         that.hud.showProgress(i.toFixed(1)+"%", i+=1.12);
         if(i >= 100) {
           that.hud.showSuccess("加载完成", function() {
             console.log("加载完成回调");
           });
-          clearInterval(that.interval);
+          clearInterval(interval);
         }
       }, 100);
     },

@@ -7,7 +7,7 @@
 
             <block wx:if="{{icontype.length === 0}}">
                 <block wx:if="{{progress > 0}}">
-                    <canvas class="hud_icon" disable-scroll="true"
+                    <canvas class="hud_icon" disable-scroll="true" 
                      canvas-id="canvas_progress" />
                 </block>
                 <block wx:else>

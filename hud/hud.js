@@ -10,6 +10,7 @@ class hudClass {
         const that = this;
         const scope = that.scope;
         var ctx; // 预定义画布上下文
+        scope.canvasTouchMove = function() {};
         that.hud = {
             defaults: {
                 isShow: false,
