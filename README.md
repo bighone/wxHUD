@@ -22,7 +22,8 @@
 	this.hud.showSuccess("加载成功"); // 成功并隐藏
 	...
 	// 进度条，加载完成后需手动调用hide()进行隐藏
-	this.hud.showProgress("10", "进度信息"); 
+	// value的范围0-100
+	this.hud.showProgress(value, "进度信息"); 
 	
 具体使用请参考demo
 
