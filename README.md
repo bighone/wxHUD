@@ -11,6 +11,8 @@
     	util.run();
     	this.util = util;
   	},
+	
+	hudClass: (s) => new hudClass(s),
 ####3、在需要使用的page页面的wxss中添加 
 	@import "?/hud/hud.wxss";
 ####4、在需要使用的page页面的wxml中添加
