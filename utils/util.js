@@ -8,7 +8,7 @@ var run = function () {
 
 var util = {
     objectHelp: objectHelp,
-    
+
     run: run
 }
 

@@ -1,6 +1,9 @@
 # wxHUD
 微信小程序 HUD
 
+![](./images/image1.png)
+![](./images/image2.png)
+
 ## 如何使用
 
 ####1、导入hud文件夹到项目中
