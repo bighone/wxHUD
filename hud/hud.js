@@ -1,4 +1,5 @@
 
+const _ = require("../vendor/lodash.js");
 
 class hudClass {
     constructor(scope) {
@@ -7,6 +8,11 @@ class hudClass {
     }
 
     _init() {
+
+        var clone = _.clone;
+        var extend = _.extend;
+        var isFunction = _.isFunction;
+
         const that = this;
         const scope = that.scope;
         var ctx; // 预定义画布上下文
