@@ -9,10 +9,8 @@
 ####1、导入hud文件夹到项目中
 ####2、app.js配置
 	import hudClass from "?/hud/hud";
-	let util = requir("?/utils/util.js");
 	onLaunch: function () {
-    	util.run();
-    	this.util = util;
+		...
   	},
 	
 	hudClass: (s) => new hudClass(s),
