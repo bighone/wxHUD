@@ -7,19 +7,27 @@
 ## 如何使用
 
 ####1、导入hud文件夹到项目中
+
 ####2、app.js配置
+
 	import hudClass from "?/hud/hud";
 	onLaunch: function () {
 		...
   	},
 	
 	hudClass: (s) => new hudClass(s),
+	
 ####3、在需要使用的page页面的wxss中添加 
+
 	@import "?/hud/hud.wxss";
+	
 ####4、在需要使用的page页面的wxml中添加
+
 	<import src="?/hud/hud.wxml" />
 	<template is="isHUD" data="{{...hud.infos}}"/>
+	
 ####5、在page的js中调用
+
 	this.hud = app.hudClass(this).hud;//初始化
 	this.hud.show(); // 默认显示加载，需主动调用隐藏hide();
 	this.hud.showSuccess("加载成功"); // 成功并隐藏

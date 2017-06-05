@@ -1,5 +1,5 @@
 
-const _ = require("../vendor/lodash.js");
+import _ from '../vendor/lodash';
 
 class hudClass {
     constructor(scope) {
